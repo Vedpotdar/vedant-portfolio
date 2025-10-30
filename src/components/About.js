@@ -57,13 +57,13 @@ const About = () => {
 
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="space-y-2">
-                <p><strong>Name:</strong> Vedant Potdar</p>
+                <p><strong>Name:</strong> Vedant Bhauso Potdar</p>
                 <p><strong>Experience:</strong> Software Developer Intern</p>
                 <p><strong>Location:</strong> India</p>
               </div>
               <div className="space-y-2">
-                <p><strong>Email:</strong> vedantpotdar@gmail.com</p>
-                <p><strong>Phone:</strong> +91 93241 72905</p>
+                <p><strong>Email:</strong> vedantpotdar170@gmail.com</p>
+                <p><strong>Phone:</strong> +91 95450 99800</p>
                 <p><strong>Availability:</strong> Open to opportunities</p>
               </div>
             </div>
@@ -85,5 +85,6 @@ const About = () => {
     </section>
   );
 };
+
 
 export default About;
