@@ -2,6 +2,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import myphoto from '../image/myimg.jpeg';
+import resumePDF from '../Vedant_Potdar_9545099800.pdf';
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -33,9 +35,12 @@ const About = () => {
             <div className="w-80 h-80 mx-auto relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full animate-spin-slow"></div>
               <div className="absolute inset-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center">
-                <div className="w-full h-full bg-gray-300 dark:bg-gray-600 rounded-full flex items-center justify-center text-gray-500">
-                  {/* Placeholder for Vedant's photo */}
-                  <span className="text-lg">Vedant's Photo</span>
+                <div className="w-full h-full rounded-full overflow-hidden">
+                  <img
+                    src={myphoto}
+                    alt="Vedant Potdar"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -48,28 +53,28 @@ const About = () => {
             className="space-y-6"
           >
             <h3 className="text-3xl font-bold">Computer Engineering Graduate & Software Developer</h3>
-            
+
             <p className="text-lg leading-relaxed">
-              Computer Engineering graduate passionate about web and mobile app development using 
-              <span className="text-blue-500 font-semibold"> React.js, Express.js, and React Native</span>. 
+              Computer Engineering graduate passionate about web and mobile app development using
+              <span className="text-blue-500 font-semibold"> React.js, Express.js, and React Native</span>.
               Currently building live applications at Infocloud IT Services.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="space-y-2">
-                <p><strong>Name:</strong> Vedant Bhauso Potdar</p>
+                <p><strong>Name:</strong> Vedant Potdar</p>
                 <p><strong>Experience:</strong> Software Developer Intern</p>
                 <p><strong>Location:</strong> India</p>
               </div>
               <div className="space-y-2">
-                <p><strong>Email:</strong> vedantpotdar170@gmail.com</p>
-                <p><strong>Phone:</strong> +91 95450 99800</p>
+                <p><strong>Email:</strong> vedantpotdar@gmail.com</p>
+                <p><strong>Phone:</strong> +91 93241 72905</p>
                 <p><strong>Availability:</strong> Open to opportunities</p>
               </div>
             </div>
 
             <motion.a
-              href="/resume.pdf" // Update with actual resume path
+              href={resumePDF} // Update with actual resume path
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center gap-2 bg-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition-colors mt-6"
@@ -85,6 +90,5 @@ const About = () => {
     </section>
   );
 };
-
 
 export default About;
