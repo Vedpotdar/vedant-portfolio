@@ -11,6 +11,14 @@ const Projects = () => {
 
     const projects = [
         {
+            title: 'DS Visualizer | Learn DSA with Animations',
+            description: 'Interactive Data Structure & Algorithm Visualizer. Learn Sorting, Searching, Stack, Queue, Linked List & Trees step-by-step with animations.',
+            tech: ['React', 'Tailwind CSS'],
+            github: 'https://github.com/Vedpotdar/ds-visualizer',
+            demo: {web: 'https://ds-visualizer-vedpotdar.vercel.app/'},
+            image: '/api/placeholder/400/250'
+        },
+        {
             title: 'Hostel Room Organizer',
             description: 'MERN stack application for efficient hostel management with room allocation, student records, and administrative features.',
             tech: ['React', 'Node.js', 'Express', 'MongoDB'],
@@ -161,5 +169,6 @@ const Projects = () => {
         </section>
     );
 };
+
 
 export default Projects;
